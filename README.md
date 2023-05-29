@@ -15,7 +15,7 @@ hitbox.OverlapParams = "Default" -- // set to custom parameters if you have any.
 hitbox.IgnoreList = {workspace.Detector} -- // Sets the FilterDescendantsInstances to this table.
 hitbox.MainTarget = "HumanoidRootPart" -- // Actively detects parts named this and returns them if detected.
 
-hitbox:Detect(5)
+hitbox:Detect(5) -- // 5 = seconds for how long the hitbox will be active for
 
 hitbox.OnDetected:Connect(function(HumanoidRootPart)
     print("Detected!")
