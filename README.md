@@ -1,4 +1,4 @@
-# Hitbox
+# Usage Guide
 
 This is a simple hitbox module which uses spatial query to detect hits.
 I made this because I couldn't really find a good premade hitbox module and RaycastHitboxV4 wasn't really fitting my melee needs.
@@ -6,7 +6,6 @@ I made this because I couldn't really find a good premade hitbox module and Rayc
 Here is a simple guide to use this module:
 
 ```lua
-
 local detector = require(game:GetService("ReplicatedStorage").Hitbox)
 local hitbox = detector.Construct(workspace.Detector) -- // create new detector with your object
 
@@ -19,7 +18,12 @@ hitbox.MainTarget = "HumanoidRootPart" -- // Actively detects parts named this a
 hitbox:Detect(5)
 
 hitbox.OnDetected:Connect(function(HumanoidRootPart)
-	print("Detected!")
+    print("Detected!")
 end)
-
 ```
+# Installation
+
+Please get this module on the marketplace:
+https://www.roblox.com/library/13591342444/HitboxModule
+
+Thank you for using this, first time making something like this and sharing it to other people haha.
